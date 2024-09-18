@@ -18,5 +18,5 @@ export function onProgressUpdate(message: string | TaskStatus): void {
   const msg = typeof message === 'object'
     ? message.message + ' ' + message.status
     : message;
-    core.info(msg);
+    core.info(`[onProgressUpdate]${msg}`);
 }

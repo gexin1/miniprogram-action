@@ -20,6 +20,7 @@ async function upload(context: ActionContext): Promise<void> {
     allowIgnoreUnusedFiles: context.allowIgnoreUnusedFiles,
     onProgressUpdate,
   });
+  core.info('ci.upload end');
 }
 
 export default upload;
