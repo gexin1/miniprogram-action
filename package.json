@@ -1,5 +1,5 @@
 {
-  "name": "miniprogram-action",
+  "name": "miniprogram-action-v2",
   "version": "2.0.1",
   "description": "A GitHub Action to automate deploying WeChat MiniProgram",
   "module": "./src/index.ts",
