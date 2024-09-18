@@ -15,9 +15,8 @@ export function getThreads(): number {
 }
 
 export function onProgressUpdate(message: string | TaskStatus): void {
-  console.log(
-    typeof message === 'object'
-      ? message.message + ' ' + message.status
-      : message
-  );
+  const msg = typeof message === 'object'
+    ? message.message + ' ' + message.status
+    : message;
+    core.info(msg);
 }
